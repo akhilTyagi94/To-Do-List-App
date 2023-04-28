@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  color: #fbeaeb;
+  background-color: #2f3c7e;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+main {
+  text-align: center;
+}
+
+main h2 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#success-msg {
+  color: rgba(36, 156, 36, 0.979);
+}
+
+form input[type="text"] {
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid #2f3c7e;
+  border-radius: 8px;
+  padding: 4px;
+  outline: none;
+  font-family: Poppins, sans-serif;
+  color: #2f3c7e;
+}
+
+form input[type="text"]:focus {
+  border: 2px solid #09835a;
+  transition: border 0.25s ease;
+}
+
+form input[type="submit"] {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 8px;
+  color: #fbeaeb;
+  background-color: #2f3c7e;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+  transition: all 0.25s ease;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.49);
+}
+
+form#addForm .list-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form#addForm .list-group .list-group-item {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: block;
+  line-height: 30px;
+}
+
+form#addForm .list-group .list-group-item:before,
+form#addForm .list-group .list-group-item:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+form#addForm .list-group .list-group-item .delete,
+form#addForm .list-group .list-group-item .edit {
+  float: right;
+}
+
+form#addForm .list-group .list-group-item button {
+  border: none;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  border-radius: 4px;
+  color: #fbeaeb;
+  cursor: pointer;
+}
+
+form#addForm .list-group .list-group-item .delete {
+  background: rgba(214, 8, 8, 0.877);
+}
+
+form#addForm .list-group .list-group-item .edit {
+  background: rgba(8, 194, 8, 0.788);
+  margin-right: 4px;
+}
